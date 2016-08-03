@@ -7,8 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A24F9E991D4D99C300B37389 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A24F9E981D4D99C300B37389 /* main.cpp */; };
+		A22B331F1D50291600DBCD6C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22B331E1D50291600DBCD6C /* Accelerate.framework */; };
+		A26095461D4E172F006B2F85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A24F9E981D4D99C300B37389 /* main.cpp */; };
+		A26095531D4E17A7006B2F85 /* libcpp11lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A260954E1D4E1790006B2F85 /* libcpp11lib.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A260954D1D4E1790006B2F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A26095381D4E1562006B2F85;
+			remoteInfo = cpp11lib;
+		};
+		A260954F1D4E1790006B2F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2D77DEA1B99BB9600CFA432;
+			remoteInfo = cpp11libtest;
+		};
+		A26095511D4E17A1006B2F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A26095371D4E1562006B2F85;
+			remoteInfo = cpp11lib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A24F9E931D4D99C300B37389 /* CopyFiles */ = {
@@ -23,8 +49,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A22B331E1D50291600DBCD6C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		A24F9E951D4D99C300B37389 /* cpp11atomicsample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpp11atomicsample; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24F9E981D4D99C300B37389 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cpp11lib.xcodeproj; path = cpp11lib/cpp11lib/cpp11lib.xcodeproj; sourceTree = "<group>"; };
+		A26095541D4E1839006B2F85 /* IsZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IsZero.h; path = cpp11lib/cpp11lib/cpp11lib/lib/IsZero.h; sourceTree = "<group>"; };
+		A26095551D4E1839006B2F85 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = cpp11lib/cpp11lib/cpp11lib/lib/Logger.h; sourceTree = "<group>"; };
+		A26095561D4E1839006B2F85 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StopWatch.h; path = cpp11lib/cpp11lib/cpp11lib/lib/StopWatch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22B331F1D50291600DBCD6C /* Accelerate.framework in Frameworks */,
+				A26095531D4E17A7006B2F85 /* libcpp11lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +74,11 @@
 		A24F9E8C1D4D99C300B37389 = {
 			isa = PBXGroup;
 			children = (
+				A22B331E1D50291600DBCD6C /* Accelerate.framework */,
+				A26095541D4E1839006B2F85 /* IsZero.h */,
+				A26095551D4E1839006B2F85 /* Logger.h */,
+				A26095561D4E1839006B2F85 /* StopWatch.h */,
+				A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */,
 				A24F9E971D4D99C300B37389 /* cpp11atomicsample */,
 				A24F9E961D4D99C300B37389 /* Products */,
 			);
@@ -62,6 +100,15 @@
 			path = cpp11atomicsample;
 			sourceTree = "<group>";
 		};
+		A26095491D4E1790006B2F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A260954E1D4E1790006B2F85 /* libcpp11lib.a */,
+				A26095501D4E1790006B2F85 /* cpp11libtest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +123,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A26095521D4E17A1006B2F85 /* PBXTargetDependency */,
 			);
 			name = cpp11atomicsample;
 			productName = cpp11atomicsample;
@@ -106,6 +154,12 @@
 			mainGroup = A24F9E8C1D4D99C300B37389;
 			productRefGroup = A24F9E961D4D99C300B37389 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A26095491D4E1790006B2F85 /* Products */;
+					ProjectRef = A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A24F9E941D4D99C300B37389 /* cpp11atomicsample */,
@@ -113,16 +167,41 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A260954E1D4E1790006B2F85 /* libcpp11lib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcpp11lib.a;
+			remoteRef = A260954D1D4E1790006B2F85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A26095501D4E1790006B2F85 /* cpp11libtest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = cpp11libtest.xctest;
+			remoteRef = A260954F1D4E1790006B2F85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A24F9E911D4D99C300B37389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A24F9E991D4D99C300B37389 /* main.cpp in Sources */,
+				A26095461D4E172F006B2F85 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A26095521D4E17A1006B2F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cpp11lib;
+			targetProxy = A26095511D4E17A1006B2F85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A24F9E9A1D4D99C300B37389 /* Debug */ = {
@@ -209,6 +288,7 @@
 		A24F9E9D1D4D99C300B37389 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -239,6 +319,7 @@
 				A24F9E9E1D4D99C300B37389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
