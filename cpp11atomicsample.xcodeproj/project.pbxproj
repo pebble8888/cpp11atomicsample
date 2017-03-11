@@ -49,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A20470B91D5F29D100C27AB7 /* SLManagedPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLManagedPointer.h; sourceTree = "<group>"; };
 		A22B331E1D50291600DBCD6C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		A24F9E951D4D99C300B37389 /* cpp11atomicsample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpp11atomicsample; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24F9E981D4D99C300B37389 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 				A22B331E1D50291600DBCD6C /* Accelerate.framework */,
 				A26095541D4E1839006B2F85 /* IsZero.h */,
 				A26095551D4E1839006B2F85 /* Logger.h */,
+				A20470B91D5F29D100C27AB7 /* SLManagedPointer.h */,
 				A26095561D4E1839006B2F85 /* StopWatch.h */,
 				A26095481D4E1790006B2F85 /* cpp11lib.xcodeproj */,
 				A24F9E971D4D99C300B37389 /* cpp11atomicsample */,
@@ -288,7 +290,7 @@
 		A24F9E9D1D4D99C300B37389 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
